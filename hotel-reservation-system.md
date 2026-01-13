@@ -1,25 +1,24 @@
 ## Data Model
 A relational database works well with read-heavy and write less frequency workflow.
 
-### Hotel
+### Hotels
 | Field | Type | Notes |
 |-----|-----|------|
 | hotel_id | UUID | Primary key |
 | name | String | |
-| location | String | City / geo |
-| rating | Float | |
+| address | String | City / geo |
 | created_at | Timestamp | |
 
-### Room
+### Rooms
 | Field | Type | Notes |
 |-----|-----|------|
 | room_id | UUID | PK |
 | hotel_id | UUID | FK → Hotel |
-| room_type | String | Deluxe, Suite |
-| price | Decimal | |
+| room_type_id | String | Deluxe, Suite |
+| name | String | |
 | capacity | Int | |
 
-### Reservation
+### Reservations
 | Field | Type | Notes |
 |-----|-----|------|
 | reservation_id | UUID | PK |
