@@ -1,31 +1,34 @@
-### Data Model
+## Data Model
 A relational database works well with read-heavy and write less frequency workflow.
 
-## Data Model (Schema View)
+### Hotel
+| Field | Type | Notes |
+|-----|-----|------|
+| hotel_id | UUID | Primary key |
+| name | String | |
+| location | String | City / geo |
+| rating | Float | |
+| created_at | Timestamp | |
 
-Hotel(
-  hotel_id PK,
-  name,
-  location,
-  rating
-)
+### Room
+| Field | Type | Notes |
+|-----|-----|------|
+| room_id | UUID | PK |
+| hotel_id | UUID | FK → Hotel |
+| room_type | String | Deluxe, Suite |
+| price | Decimal | |
+| capacity | Int | |
 
-Room(
-  room_id PK,
-  hotel_id FK,
-  room_type,
-  price,
-  capacity
-)
-
-Reservation(
-  reservation_id PK,
-  room_id FK,
-  user_id,
-  check_in,
-  check_out,
-  status
-)
+### Reservation
+| Field | Type | Notes |
+|-----|-----|------|
+| reservation_id | UUID | PK |
+| room_id | UUID | FK → Room |
+| user_id | UUID | |
+| check_in | Date | |
+| check_out | Date | |
+| status | String | CONFIRMED / CANCELLED |
+| created_at | Timestamp | |
 
 
 ### Concurrency issues
