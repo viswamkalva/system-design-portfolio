@@ -1,7 +1,7 @@
 ## Data Model
 A relational database works well with read-heavy and write less frequency workflow.
 
-### Hotels
+### hotels
 | Field | Type | Notes |
 |-----|-----|------|
 | hotel_id | UUID | Primary key |
@@ -9,7 +9,7 @@ A relational database works well with read-heavy and write less frequency workfl
 | address | String | City / geo |
 | created_at | Timestamp | |
 
-### Rooms
+### rooms
 | Field | Type | Notes |
 |-----|-----|------|
 | room_id | UUID | PK |
@@ -18,7 +18,7 @@ A relational database works well with read-heavy and write less frequency workfl
 | name | String | |
 | capacity | Int | |
 
-### Reservations
+### reservations
 | Field | Type | Notes |
 |-----|-----|------|
 | reservation_id | UUID | PK |
@@ -29,6 +29,21 @@ A relational database works well with read-heavy and write less frequency workfl
 | status | String | CONFIRMED / CANCELLED |
 | created_at | Timestamp | |
 
+### users
+| Field | Type | Notes |
+|-----|-----|------|
+| user_id | UUID | PK |
+| first_name | String |  |
+| last_name | String |  |
+| email | String |  |
+| phone | Int |  |
+
+### room_types
+| Field | Type | Notes |
+|-----|-----|------|
+| user_id | UUID | PK |
+
+### room_pricing
 
 ### Concurrency issues
 
