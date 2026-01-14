@@ -41,7 +41,11 @@ A relational database works well with read-heavy and write less frequency workfl
 ### room_types
 | Field | Type | Notes |
 |-----|-----|------|
-| user_id | UUID | PK |
+| room_type_id | UUID | PK |
+| hotel_id | UUID | FK → hotel |
+| date | Timestamp | |
+| total_inventory | Int |  |
+| total_reserved | Int |  |
 
 ### room_pricing
 
