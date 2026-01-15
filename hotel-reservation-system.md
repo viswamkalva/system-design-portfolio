@@ -1,5 +1,7 @@
 # Step 1 - Establish Design Scope
 
+Questions to think about:
+
 Question 1: Can customers book hotel rooms through the hotels website only? Or we need to support other options such as phone calls?
 
 Question 2: Do customers pay when they make reservations or when they arrive at hotel?
