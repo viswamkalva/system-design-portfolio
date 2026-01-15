@@ -1,4 +1,4 @@
-# Step 1 - Establish Design Scope
+# Step 1 - Establish Design Scope & Understand the problem
 
 Questions to think about:
 
@@ -14,7 +14,15 @@ Question 5: What is the initial scale that we are building for? Number of hotels
 
 Are there any things we need to consider?
 
-### Functional Requirements
+## Functional Requirements
+1. Hotel Management
+2. Search and Reservations
+3. Reservation History
+4. Notifications
+
+## Non-Functional Requirements
+1. High Concurrency - No two customers can book the same room on a particular day.
+2. Moderate Latency - Ideal to have a fast response, But I beleive its acceptable if the system takes few seconds to process the requests.
 
 
 ## Data Model
