@@ -1,4 +1,4 @@
-#Step 1 - Establish Design Scope
+# Step 1 - Establish Design Scope
 
 Question 1: Can customers book hotel rooms through the hotels website only? Or we need to support other options such as phone calls?
 
