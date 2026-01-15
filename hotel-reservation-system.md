@@ -1,3 +1,20 @@
+#Step 1 - Establish Design Scope
+
+Question 1: Can customers book hotel rooms through the hotels website only? Or we need to support other options such as phone calls?
+
+Question 2: Do customers pay when they make reservations or when they arrive at hotel?
+
+Question 3: Do we require to support cancellations of reservation by customer?
+
+Question 4: Do we want to support demand-based pricing like weekends, long weekends Pricing etc?
+
+Question 5: What is the initial scale that we are building for? Number of hotels, rooms?
+
+Are there any things we need to consider?
+
+### Functional Requirements
+
+
 ## Data Model
 A relational database works well with read-heavy and write less frequency workflow.
 
