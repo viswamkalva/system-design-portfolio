@@ -48,6 +48,21 @@ A relational database works well with read-heavy and write less frequency workfl
 | total_reserved | Int |  |
 
 ### room_pricing
+| Field | Type | Notes |
+|-----|-----|------|
+| room_type_id | UUID | PK |
+| date | Timestamp | |
+| price | Decimal |  |
+| created_at | Timestamp |  |
+
+### notifications
+| Field | Type | Notes |
+|-----|-----|------|
+| notification_id | UUID | PK |
+| user_id | UUID | FK → users|
+| reservation_id | UUID | FK → reservation |
+| is_read | boolean |  |
+| created_at | Timestamp |  |
 
 ### Concurrency issues
 
